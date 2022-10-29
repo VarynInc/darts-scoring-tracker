@@ -1,0 +1,32 @@
+{
+  "name": "darts-scoring-tracker",
+  "version": "0.1.0",
+  "description": "SPA to help score darts games and track player scores",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./main.css -o ./distrib/main.css --watch",
+    "build": "npx tailwindcss -m -i ./main.css -o ./distrib/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VarynInc/darts-scoring-tracker.git"
+  },
+  "keywords": [
+    "darts",
+    "javascript",
+    "cricket",
+    "games",
+    "spa",
+    "web"
+  ],
+  "author": "John Foster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VarynInc/darts-scoring-tracker/issues"
+  },
+  "homepage": "https://github.com/VarynInc/darts-scoring-tracker#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  }
+}

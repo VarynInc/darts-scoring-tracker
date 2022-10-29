@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Darts Score Tracker</title>
+    <link href="./distrib/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body translate="no">
+    <header
+      class="bg-center bg-no-repeat bg-cover grayscale md:grayscale-0 transition-all duration-1000"
+    >
+      <div class="bg-[#efefef] mx-auto text-black p-4 flex flex-row flex-wrap">
+        <p id="game-type" class="w-32"></p>
+        <button id="add-button" class="w-16" type="button" value="add" onclick="addToggle(this)">Add +</button>
+        <button id="menu-button" class="w-32" type="button" value="menu" onclick="openSideNav()">Menu</button>
+      </div>
+    </header>
+    <div id="sideBarNav" class="side-nav">
+      <a href="javascript:void(0)" class="close-button" onclick="closeSideNav()">&times;</a>
+      <a href="#" onclick="newGame()">New game</a>
+      <a href="#" onclick="showChangeGame()">Change game</a>
+      <a href="#" onclick="showPlayers()">Players</a>
+      <a href="#" onclick="showAbout()">About</a>
+    </div>    
+    <main id="main" class="p-4 mx-auto">
+      <!-- The JavaScript code will place game content here -->
+    </main>
+    <footer class="bg-[#efefef] text-center">
+        <p>Darts score tracker by <a href="https://varyn.com/about/">Varyn</a></p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
